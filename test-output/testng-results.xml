@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17" started-at="2019-03-23T11:12:18Z" finished-at="2019-03-23T11:12:18Z">
+    <groups>
+      <group name="easystoresgrp">
+        <method signature="EasyStoresTest.easyStoresSearch(java.lang.String)[pri:0, instance:test.easyStores.EasyStoresTest@6767c1fc]" name="easyStoresSearch" class="test.easyStores.EasyStoresTest"/>
+      </group> <!-- easystoresgrp -->
+    </groups>
+    <test name="Default test" duration-ms="17" started-at="2019-03-23T11:12:18Z" finished-at="2019-03-23T11:12:18Z">
+      <class name="test.easyStores.EasyStoresTest">
+        <test-method status="SKIP" signature="easyStoresSearch(java.lang.String)[pri:0, instance:test.easyStores.EasyStoresTest@6767c1fc]" name="easyStoresSearch" duration-ms="0" started-at="2019-03-23T22:12:18Z" data-provider="filldata" finished-at="2019-03-23T22:12:18Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: src\data\TestSearchData.xlxs (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: src\data\TestSearchData.xlxs (The system cannot find the file specified)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:110)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: java.io.FileNotFoundException: src\data\TestSearchData.xlxs (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at base.TestBase.fetchData(TestBase.java:94)
+	at test.easyStores.EasyStoresTest.getDataFromExcel(EasyStoresTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:51)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:41)
+	... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- easyStoresSearch -->
+      </class> <!-- test.easyStores.EasyStoresTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
